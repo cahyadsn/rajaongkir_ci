@@ -17,7 +17,8 @@ $provinces = $this->rajaongkir->province();
 //Mendapatkan nama semua kota
 $cities = $this->rajaongkir->city();
 
-//Mendapatkan data ongkos kirim dari kota Jakarta Barat (151) ke kabupaten Gianyar (128) seberat 1000 gram dengan kurir pengiriman 'jne'
+//Mendapatkan data ongkos kirim dari kota Jakarta Barat (151) ke kabupaten Gianyar (128) seberat 1000 gram 
+//dengan kurir pengiriman 'jne'
 $cost = $this->rajaongkir->cost(151, 128, 1000, "jne");
 ```
 ### Response
