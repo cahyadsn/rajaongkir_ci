@@ -1,5 +1,5 @@
 # RajaOngkir CodeIgniter
-Merupakan library CodeIgniter untuk mengkonsumsi API dari [RajaOngkir](http://rajaongkir.com). Library ini dapat digunakan untuk semua tipe Akun (**starter, basic** maupun **pro**), dengan penggunaan dan batasan sesuai yang terdapat di [Dokumentasi Rajaongkir] (http://rajaongkir.com/dokumentasi).
+Merupakan library CodeIgniter untuk mengkonsumsi API dari [RajaOngkir](http://rajaongkir.com). Library ini dapat digunakan untuk semua tipe Akun (**starter, basic** maupun **pro**), dengan penggunaan dan batasan sesuai yang terdapat di [Dokumentasi Rajaongkir](http://rajaongkir.com/dokumentasi) .
 ## Instalasi
 Copy file sesuai dengan lokasinya masing-masing.
 ## Konfigurasi
