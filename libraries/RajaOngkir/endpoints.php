@@ -41,8 +41,8 @@ class Endpoints {
      * Fungsi untuk mendapatkan data kecamatan di Indonesia
      * @param integer $city_id ID kota
      * @param integer $id ID kecamatan, Jika ID kecamatan NULL, maka akan menampilkan semua 
-                    kecmatan pada kabupaten/kota terkait. Jika ID kecamatan diisi, maka akan 
-                    menampilkan detil kecamatan
+     *               kecamatan pada kabupaten/kota terkait. Jika ID kecamatan diisi, maka akan 
+     *               menampilkan detil kecamatan
      * @return string Response dari cURL, berupa string JSON balasan dari RajaOngkir
      */
     function subdistrict($city_id, $id = NULL) {
@@ -67,7 +67,9 @@ class Endpoints {
             'origin' => $origin,
             'destination' => $destination,
             'weight' => $weight,
-            'courier' => $courier
+            'courier' => $courier,
+            'originType' => (strlen($origin)==3 && $this->account_type!='pro')?'city':$this->originType,
+            'destinationType' => (strlen($destination)==3 && $this->account_type!='pro')?'city':$this->originType
         );
         $rest_client = new RESTClient($this->api_key, 'cost', $this->account_type);
         return $rest_client->post($params);
