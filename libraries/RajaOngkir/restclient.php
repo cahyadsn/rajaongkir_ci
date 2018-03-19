@@ -15,7 +15,7 @@ class RESTClient {
           $this->api_url = "https://pro.rajaongkir.com/api/";
         }elseif($this->account_type=='basic'){
           $this->api_url = "https://api.rajaongkir.com/basic/";
-        }else($this->account_type=='starter'){
+        }elseif($this->account_type=='starter'){
           $this->api_url = "https://api.rajaongkir.com/starter/";
         }
     }
